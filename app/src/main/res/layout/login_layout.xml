@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liferay.mobile.screens.viewsets.material.auth.login.LoginView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+    <LinearLayout
+        android:id="@+id/basic_authentication_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/drawable_login"
+                style="@style/material_icon"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/liferay_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/credit_card"
+                android:drawablePadding="10dp"
+                android:drawableTint="#AAAAAA"
+                android:hint="Código do Beneficiário"
+                android:inputType="text"
+                android:labelFor="@+id/liferay_login" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/drawable_password"
+                style="@style/material_icon"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/liferay_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:drawableTint="#AAAAAA"
+                android:hint="Senha"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/liferay_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ronded"
+                android:backgroundTint="#DC6B2F"
+                android:text="Entrar"
+                android:textColor="#FFFFFF" />
+
+            <com.liferay.mobile.screens.base.ModalProgressBar
+                android:id="@+id/liferay_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|left"
+                android:layout_margin="10dp"
+                android:theme="@style/white_theme"
+                android:visibility="invisible"
+                app:actionViewId="@id/liferay_login_button" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/oauth_authentication_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/authorize_application"
+        android:visibility="gone" />
+</com.liferay.mobile.screens.viewsets.material.auth.login.LoginView>

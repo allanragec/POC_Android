@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Change these values for your Liferay Portal installation -->
+    <string name="liferay_server">http://localhost:8080</string>
+    <integer name="liferay_company_id"></integer>
+    <integer name="liferay_group_id"></integer>
+    <integer name="liferay_portal_version">70</integer>
+    <string name="push_sender"></string>
+    <string name="base_url">http://localhost</string>
+    <string name="image_url"><![CDATA[http://localhost...]]></string>
+    <string name="default_user">user</string>
+    <string name="default_password">password</string>
+</resources>

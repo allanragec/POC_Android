@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">POC</string>
+    <string name="could_not_load">"Banner não pôde ser carregado"</string>
+</resources>
